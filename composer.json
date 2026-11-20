@@ -1,0 +1,17 @@
+{
+    "name": "usuario/visual",
+    "autoload": {
+        "psr-4": {
+            "Usuario\\Visual\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ArthurSouza",
+            "email": "arthurdev.ads@gmail.com"
+        }
+    ],
+    "require": {
+        "dompdf/dompdf": "^3.1"
+    }
+}

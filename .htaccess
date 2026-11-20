@@ -1,0 +1,13 @@
+# Protege pastas sensíveis (InfinityFree / Apache)
+Options -Indexes
+RewriteEngine On
+
+# Bloqueia acesso direto a código e dados
+RewriteRule ^(src|vendor|database)/ - [F,L]
+RewriteRule \.(env|sql|md|json|lock)$ - [F,L]
+RewriteRule ^seed_usuarios\.php$ - [F,L]
+
+# Se o document root for a raiz, assets e uploads ficam em public/
+# (descomente se necessário)
+# RewriteRule ^assets/(.*)$ public/assets/$1 [L]
+# RewriteRule ^uploads/(.*)$ public/uploads/$1 [L]

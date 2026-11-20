@@ -1,0 +1,5 @@
+Options -Indexes
+RewriteEngine On
+
+# Bloqueia acesso a arquivos sensíveis se caírem aqui
+RewriteRule \.(env|sql|md|json|lock|php~)$ - [F,L]

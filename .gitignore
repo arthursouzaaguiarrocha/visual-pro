@@ -1,0 +1,24 @@
+# Dependências
+/vendor/
+
+# Ambiente
+.env
+.env.local
+*.local.php
+
+# Uploads de usuário (mantém a pasta, ignora conteúdo)
+/public/uploads/artes/*
+!/public/uploads/artes/.htaccess
+
+# IDE / SO
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+seed_usuarios.php
+
+# Logs e temporários
+*.log
+/tmp/
